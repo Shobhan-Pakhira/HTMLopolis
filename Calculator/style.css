@@ -1,3 +1,5 @@
+/*CSS for Gradient Background*/
+
 body{
     margin: auto;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -65,4 +67,107 @@ body{
     100%{
         transform: translateX(1);
     }
+}
+
+
+
+/* CSS for Calculator */
+body{
+    width: 500px;
+    margin: 4% auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    font-size: 1.8rem;
+}
+
+.calculator{
+    padding: 20px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+}
+
+.input{
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+}
+
+.input:hover{
+    border: 1px solid #bbb;
+    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0,0,0,0.2);
+}
+
+.operator div{
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 4px 10px 0px;
+    cursor: pointer;
+    background-color: #ddd;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow.2s;
+}
+
+.operator div:hover{
+    background-color: #ddd;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);;
+    border-color: #aaa;
+}
+
+.leftPanel{
+    display: inline-block;
+}
+
+.numbers div{
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow.2s;
+}
+
+.number div:hover{
+    background-color: #f1f1f1;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);;
+    border-color: #aaa;
+}
+
+div.equals{
+    display: inline-block;
+    border: 1px solid #3079ed;
+    border-radius: 1px;
+    width: 17%;
+    text-align: center;
+    padding: 127px 10px;
+    vertical-align: top;
+    margin: 10px 6px 10px 0px;
+    cursor: pointer;
+    background-color: #4d90fe;
+    transition: all .2s ease-in-out;
+}
+
+div.equals:hover{
+    background-color: #307fc9;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);;
+    border-color: #1857bb;
+}
+
+div.equals:active{
+    font-weight: bold;
 }
