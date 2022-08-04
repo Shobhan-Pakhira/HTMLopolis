@@ -1,0 +1,4 @@
+"use strict"
+var input = document.getElementById('input'),  //input-ouptut button
+    number= documen.querySelectorAll('.number div'),
+    operator= document.querySelectorAll('.operator div')
